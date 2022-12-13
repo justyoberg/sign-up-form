@@ -17,10 +17,9 @@ p {
 form {
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
-  border-collapse: collapse;
+  flex-wrap: wrap;
   height: 80%;
-  width: 70%;
+  width: 60%;
   margin-left: 5%;
 }
 
@@ -42,27 +41,19 @@ a {
 }
 
 input {
-
-}
-
-.form-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 45%;
-}
-
-.form-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 45%;
+  outline: none;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.6vw;
 }
 
 .form-item {
   display: flex;
   flex-direction: column;
-  font-size: 0.7vw;
+  width: 40%;
+  font-size: 0.6vw;
+  color: #555;
 }
 
 a:hover {
