@@ -44,8 +44,18 @@ input {
   outline: none;
   height: 40px;
   border: 1px solid #ddd;
+  border-collapse: collapse;
   border-radius: 4px;
   font-size: 0.6vw;
+}
+
+input:focus {
+  border: 2px solid rgb(99, 133, 163);
+  box-shadow: 5px 5px 10px rgb(99, 133, 163, 0.3);
+}
+
+input:hover:not(:focus) {
+  border: 1px solid rgb(99, 133, 163);
 }
 
 .form-item {
