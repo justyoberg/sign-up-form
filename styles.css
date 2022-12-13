@@ -14,6 +14,14 @@ p {
   padding: 0;
 }
 
+form {
+  border: 1px solid red;
+  border-collapse: collapse;
+  height: 80%;
+  width: 70%;
+  margin-left: 5%;
+}
+
 button {
   background-color: rgb(99, 133, 163);
   height: 5vh;
@@ -23,6 +31,23 @@ button {
   font-size: 1.25vw;
   color: white;
   box-shadow: 7px 7px 10px silver;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(99, 133, 163);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a:hover {
+  color: rgb(145, 171, 194);
+  transition: 0.3s;
 }
 
 button:hover {
@@ -60,10 +85,21 @@ button:hover {
   position: relative;
 }
 
+.right-mid p {
+  font-size: 1.1vw;
+  font-weight: bold;
+  padding: 1.5% 0 1.5% 5%;
+}
+
 .right-bottom {
   background-color: #eee;
   height: 34vh;
   padding: 5%;
+}
+
+.right-bottom p {
+  margin-top: 40px;
+  font-size: 0.9vw;
 }
 
 .logo-div {
