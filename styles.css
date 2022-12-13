@@ -1,5 +1,6 @@
 * {
-  font-family: "Rubik 80s Fade", cursive;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
 }
 
 body {
@@ -8,13 +9,77 @@ body {
   padding: 0;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: rgb(99, 133, 163);
+  height: 5vh;
+  width: 15vw;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.25vw;
+  color: white;
+  box-shadow: 7px 7px 10px silver;
+}
+
+button:hover {
+  background-color: rgb(130, 158, 182);
+  transition: 0.3s;
+}
+
 .left {
   height: 100vh;
-  width: 33.33%;
+  width: 33.33vw;
 }
 
 .right {
-  background-color: #eee;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
-  width: 66.66%;
+  width: 66.66vw;
+}
+
+.right-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #eee;
+  padding: 15% 20% 10% 5%;
+  font-size: 1.3vw;
+  font-weight: bold;
+  height: 34vh;
+}
+
+.right-mid {
+  background-color: white;
+  box-shadow: 7px 7px 10px silver;
+  height: 32vh;
+  position: relative;
+}
+
+.right-bottom {
+  background-color: #eee;
+  height: 34vh;
+  padding: 5%;
+}
+
+.logo-div {
+  position: absolute;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 17%;
+  width: 33.33%;
+  top: 25%;
+  opacity: 50%;
+}
+
+.logo-div p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 5vw;
 }
