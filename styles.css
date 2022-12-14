@@ -34,6 +34,10 @@ button {
   box-shadow: 7px 7px 10px silver;
 }
 
+button:active:not(:disabled) {
+  box-shadow: 1px 1px 10px black inset;
+}
+
 button:disabled,
 button:disabled:hover {
   background-color: rgb(156, 160, 163);
@@ -73,12 +77,10 @@ input:hover:not(:focus) {
 
 a:hover {
   color: rgb(145, 171, 194);
-  transition: 0.3s;
 }
 
 button:hover {
   background-color: rgb(130, 158, 182);
-  transition: 0.3s;
 }
 
 .left {
